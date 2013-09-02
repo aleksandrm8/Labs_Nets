@@ -10,7 +10,7 @@
 
 using namespace std;
 
-#define HELO "HELO 192.168.1.1\r\n"
+#define HELO "HELO 127.0.0.1\r\n"
 #define DATA "DATA\r\n"
 #define QUIT "QUIT\r\n"
 
@@ -19,7 +19,7 @@ struct sockaddr_in server;
 struct hostent *hp, *gethostbyname();
 char buf[BUFSIZ+1];
 int len;
-char *host_id="192.168.0.1"; //локалхост
+char *host_id="127.0.0.1"; //локалхост
 
 char *from_id="rogachev@postavte_zachot.com";
 char *to_id="rogachev@postavte_zachot.com";
